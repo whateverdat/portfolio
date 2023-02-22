@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card-mobile {
+    margin: auto;
+    width: 90%;
+    border: 1px solid theme('colors.slate.700');
+    padding: 10px;
+    height: fit-content;
+    margin-bottom: 1rem;
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.6');
+    box-shadow: theme('boxShadow.xl');
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .card {
+    margin: auto;
+    width: 50%;
+    border: 1px solid theme('colors.slate.700');
+    padding: 10px;
+    height: fit-content;
+    margin: 0 1.5rem 0 1.5rem;
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.6');
+    box-shadow: theme('boxShadow.xl');
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .card-small {
+    margin: auto;
+    width: 25%;
+    border: 1px solid theme('colors.slate.700');
+    padding: 10px;
+    height: fit-content;
+    margin: 0 1.5rem 0 1.5rem;
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.6');
+    box-shadow: theme('boxShadow.xl');
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .button {
+    width: 50%;
+    border: 1px solid theme('colors.white');
+    border-radius: theme('borderRadius.lg');
+    background: theme('colors.slate.700');
+    color: theme('colors.white');
+  }
+  
+  .button:hover {
+    background: theme('colors.slate.800');
+  }
+  
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* https://www.gradient-animator.com/ */
+  background: linear-gradient(230deg, #0f172a, #111827, #0f172a) 0% 0% / 300% 300%;
+    background-size: 800% 800%;
+    animation: 60s ease 0s infinite normal none running gradient;
+}
+
+@keyframes gradient {
+  0%{background-position:0% 84%}
+  50%{background-position:100% 16%}
+  100%{background-position:0% 84%}
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
